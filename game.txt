@@ -49,7 +49,7 @@ Buildings
 		name:Coin Boost
 		desc:Provides a boost to coin gain.
 		cost:10 coins
-		passive:multiply coin yield by 1.05
+		passive:multiply yield of coins by 1.5
 		unlocked
 		
 Achievements
