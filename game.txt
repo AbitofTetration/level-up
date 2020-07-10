@@ -17,12 +17,11 @@ Layout
 		
 Buttons
 	*coinButton
-		name:Make a bunny
+		name:Click button
 		desc:Click this little bunny to get more bunnies!
 		on click:anim icon wobble
 		on click:yield 1 coin
 		on click:yield 1 xp
-		icon:stuff/bunny.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
@@ -41,6 +40,12 @@ Resources
 		class:noBackground
 		show earned
 
+	*magnet|magnets
+		name:Magnet
+		desc:Buy magnet upgrades to boost various facets of the game!
+		class:noBackground
+		show earned
+
 Buildings
 	*TEMPLATE
 		on click:anim glow
@@ -48,8 +53,16 @@ Buildings
 	*coinBoost
 		name:Coin Boost
 		desc:Provides a boost to coin gain.
+		cost increase:450%
 		cost:10 coins
 		passive:multiply yield of coins by 1.5
+		unlocked
+	*levelUp
+		name:Level Up
+		desc:Get Magnets!
+		cost increase:200%
+		cost:20 xp
+		on earn:yield (this) magnet
 		unlocked
 		
 Achievements
@@ -57,6 +70,22 @@ Achievements
 		on click:anim glow
 		
 	*coinAchiev1
-		name:Coin power
+		name:Coin power I
 		desc:Have <b>1</b> coin.
 		req:1 coin
+	*coinAchiev2
+		name:Coin power II
+		desc:Have <b>5</b> coins.
+		req:5 coins
+	*coinAchiev3
+		name:Coin power III
+		desc:Have <b>25</b> coins.
+		req:25 coins
+	*coinAchiev4
+		name:Coin power IV
+		desc:Have <b>100</b> coins.
+		req:25 coins
+	*coinAchiev4
+		name:Coin power V
+		desc:Have <b>750</b> coins.
+		req:750 coins
