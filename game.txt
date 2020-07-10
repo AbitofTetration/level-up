@@ -60,7 +60,7 @@ Buildings
 	*levelUp
 		name:Level Up
 		desc:Get Magnets!
-		cost increase:200%
+		cost increase:150%
 		cost:20 xp
 		on earn:yield (this) magnet
 		unlocked
