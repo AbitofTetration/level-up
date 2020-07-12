@@ -62,7 +62,7 @@ Buildings
 		desc:Level up faster!
 		cost increase:800%
 		cost:10 coins
-		passive:multiply cost of levelUp by 0.9
+		passive:lower cost of levelUp by 1
 		unlocked
 	*levelUp
 		name:Level Up
