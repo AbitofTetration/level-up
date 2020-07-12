@@ -92,7 +92,7 @@ Achievements
 	*coinAchiev4
 		name:Coin power IV
 		desc:Have <b>100</b> coins.
-		req:25 coins
+		req:100 coins
 	*coinAchiev5
 		name:Coin power V
 		desc:Have <b>750</b> coins.
