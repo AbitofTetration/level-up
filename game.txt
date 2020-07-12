@@ -12,8 +12,24 @@ Settings
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:stuff/bigBlue.css
 
-Layout
-  use default
+*main
+  contains:res, buttons
+  *res
+    contains:Resources
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
+  *buildings
+    contains:tag:NormalUpgrades
+    header:Normal Upgrades
+    tooltip origin:left
+  *upgrades
+    contains:tag:MagnetUpgrades
+    header:Magnet Upgrades
+    costs:hide
+    names:hide
   *achievs
     in:main
     contains:Achievements
@@ -56,6 +72,7 @@ Buildings
 	*coinBoost
 		name:Coin Boost
 		desc:Provides a boost to coin gain.
+		tag:NormalUpgrades
 		cost increase:450%
 		cost:10 coins
 		passive:multiply yield of coins by 1.5
@@ -63,6 +80,7 @@ Buildings
 	*fasterLevel
 		name:Faster Leveling
 		desc:Level up faster!
+		tag:NormalUpgrades
 		cost increase:800%
 		cost:10 coins
 		passive:multiply yield of xp by 1.1
@@ -70,10 +88,19 @@ Buildings
 	*levelUp
 		name:Level Up
 		desc:Get Magnets!
+		tag:MagnetUpgrades
 		cost increase:150%
 		cost:20 xp
 		on earn:yield 1 magnet
 		passive:increase levelUp yield of magnet by 1
+		unlocked
+	*fasterLevel2
+		name:Faster Leveling
+		desc:Level up faster!
+		tag:MagnetUpgrades
+		cost increase:200%
+		cost:3 magnet
+		passive:multiply yield of xp by 1.2
 		unlocked
 		
 Achievements
