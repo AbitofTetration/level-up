@@ -57,6 +57,13 @@ Buildings
 		cost:10 coins
 		passive:multiply yield of coins by 1.5
 		unlocked
+	*fasterLevel
+		name:Faster Leveling
+		desc:Level up faster!
+		cost increase:800%
+		cost:10 coins
+		passive:multiply cost of levelUp by 0.95
+		unlocked
 	*levelUp
 		name:Level Up
 		desc:Get Magnets!
