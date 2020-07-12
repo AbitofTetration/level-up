@@ -13,7 +13,10 @@ Settings
 	stylesheet:stuff/bigBlue.css
 
 Layout
-	use default
+  use default
+  *achievs
+    in:main
+    contains:Achievements
 		
 Buttons
 	*coinButton
