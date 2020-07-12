@@ -70,7 +70,6 @@ Buildings
 		cost increase:150%
 		cost:20 xp
 		on earn:yield 1 magnet
-		on lose:lose 1 magnet
 		passive:increase levelUp yield of magnet by 1
 		unlocked
 		
